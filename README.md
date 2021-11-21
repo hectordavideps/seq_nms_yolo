@@ -10,6 +10,9 @@
 
 This project combines **YOLOv2**([reference](https://arxiv.org/abs/1506.02640)) and **seq-nms**([reference](https://arxiv.org/abs/1602.08465)) to realise **real time video detection**.
 
+## Installation
+1. Create the repository and use the third option for cloning the repository. Insert `https://github.com/melodiepupu/seq_nms_yolo` for this step.
+
 ## Steps
 
 1. `make` the project;
