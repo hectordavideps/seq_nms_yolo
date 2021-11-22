@@ -14,10 +14,10 @@ This project combines **YOLOv2**([reference](https://arxiv.org/abs/1506.02640)) 
 
 1. Create the repository without a readme and use the third option for cloning the repository. Insert `https://github.com/melodiepupu/seq_nms_yolo` for this step.
 2. On your computer, choose a path and make a python 2 virtual enviroment `virtualenv -p python2 yolo_env`
-3. Avtivate the enviroment using 
-    - `source activate`
+3. Avtivate the enviroment using:
     - `source yolo_env/bin/activate`
-5. Install the requeriments using `conda install -y -c conda-forge opencv`, `conda install -y matplotlib Pillow scipy tensorflow`, `conda install -y -c conda-forge tf_object_detection`
+    - `source activate`
+5. Install the requeriments using `conda install -y -c conda-forge opencv`, `conda install -y matplotlib Pillow scipy tensorflow`, `conda install -y -c conda-forge tf_object_detection` 
 6. Now clone the GitHub proyect by using `git clone https://github.com/hectordavideps/seq_nms_yolo.git`
 7. Go to the cloned repository using `cd` on terminal and now download weights running `wget https://pjreddie.com/media/files/yolo.weights` and `wget https://pjreddie.com/media/files/yolov2-tiny-voc.weights`first for yolo.weight, second for tiny.weights.
 ## Running Yolo + Seq-NMS
@@ -32,7 +32,9 @@ This project combines **YOLOv2**([reference](https://arxiv.org/abs/1506.02640)) 
 And you will see detection results in `video/output`
 
 ## Running Yolo
-1. In the step 5 of previous running, desactivate 2 flags by running `python yolo_seqnms.py --seq_nms 0 --nms 0`. This genereate the classification without the post-processing.
+1. In the yolo_seqnms.py you have to comment this 2 lines of the function `dsnms`:
+    -maxPath(dets,links) line 205
+    -NMS(dets) line 206
 
 ## Reference
 
