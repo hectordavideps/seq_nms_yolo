@@ -33,8 +33,8 @@ And you will see detection results in `video/output`
 
 ## Running Yolo
 1. In the yolo_seqnms.py you have to comment this 2 lines of the function `dsnms`:
-    -maxPath(dets,links) line 205
-    -NMS(dets) line 206
+    - maxPath(dets,links) line 205
+    - NMS(dets) line 206
 
 ## Reference
 
